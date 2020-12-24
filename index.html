@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maps</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/Jquery.min.js"></script>
+
+    <script src="script.js"></script>
+</head>
+
+
+
+<body>
+    <div id="map"></div>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBpBqyBydiJ3shEqemjkAKf1MZgmgz7-Q8&callback=iniciarMap"></script>
+
+
+    <!--misena--AIzaSyBpBqyBydiJ3shEqemjkAKf1MZgmgz7-Q8-->
+    <!--mia--AIzaSyDQ4hm64Suyjy7Jc1_HhO8dGesNOa6tbek-->
+    <!--robada--AIzaSyBNMQoC-y48Igm14pqR5vNWVqfh06Tubuk-->
+    <!--ROBADA--AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik-->
+
+    <!--MIA--AIzaSyAiMdowpA45CsP0icyfKeqwN2HcILrCM14-->
+
+    <!--MIA--AIzaSyC4_ao66bYIHzujJc9nCNxj6Y_8-Z9scvU-->
+
+    <!--MIA-AIzaSyBdayvqjozPmVSR8uvL5uqMccYii3lYCHQ-->
+
+    <div class="container">
+
+
+
+        <!-- Autocomplete location search input -->
+        <div class="form-group">
+            <label>Ubicación:</label>
+
+            <input type="text" class="form-control" id="search_input" placeholder="Direccion" />
+            <input type="text" class="form-control" id="resultado" placeholder="Valor" />
+
+            <button type="button" id="boton">Validar</button>
+            <input type="hidden" id="loc_lat" />
+            <input type="hidden" id="loc_long" />
+
+
+
+        </div>
+
+        <!-- Display latitude and longitude -->
+        <div class="latlong-view">
+            <p><b>Latitude:</b> <span id="latitude_view"></span></p>
+            <p><b>Longitude:</b> <span id="longitude_view"></span></p>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
